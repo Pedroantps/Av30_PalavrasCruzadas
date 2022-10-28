@@ -35,13 +35,13 @@ namespace Av30_PalavrasCruzadas
 
         private void click1(object sender, RoutedEventArgs e)
         {
-            
+
             MessageBox.Show(
             "Ocorrências detectáveis ou perceptíveis, com impacto e importância, que normalmente são registradas por um serviço automático ou por uma ferramenta de monitoração.",
             "Dica 1",
             MessageBoxButton.OK,
             MessageBoxImage.Information);
-            
+
         }
 
         private void click2(object sender, RoutedEventArgs e)
@@ -159,9 +159,9 @@ namespace Av30_PalavrasCruzadas
 
         private void logicaManutencao()
         {
-            if (txtManutencao1.Text.ToUpper() == "M" && txtManutencao2.Text.ToUpper() == "A" && txtEventos4_manutencao3.Text.ToUpper() == "N" && txtManutencao4.Text.ToUpper() == "U" && txtManutencao5.Text.ToUpper() == "T" && txtManutencao6_Excecao1.Text.ToUpper() == "E" && txtManutencao7.Text.ToUpper() == "N" && txtManutencao8.Text.ToUpper() == "C" && txtManutencao9.Text.ToUpper() == "A" && txtManutencao10_Avisos5.Text.ToUpper() == "O")
+            if (txtManutencao1.Text.ToUpper() == "M" && txtManutencao2.Text.ToUpper() == "A" && txtEventos4_manutencao3.Text.ToUpper() == "N" && txtManutencao4.Text.ToUpper() == "U" && txtManutencao5.Text.ToUpper() == "T" && txtManutencao6_Excecao1.Text.ToUpper() == "E" && txtManutencao7.Text.ToUpper() == "N" && txtManutencao8.Text.ToUpper() == "Ç" && txtManutencao9.Text.ToUpper() == "A" && txtManutencao10_Avisos5.Text.ToUpper() == "O")
             {
-                if (palavra2 == "MANUTENCAO")
+                if (palavra2 == "MANUTENÇAO")
                 {
                     txtManutencao1.Text = "M";
                     txtManutencao2.Text = "A";
@@ -170,7 +170,7 @@ namespace Av30_PalavrasCruzadas
                     txtManutencao5.Text = "T";
                     txtManutencao6_Excecao1.Text = "E";
                     txtManutencao7.Text = "N";
-                    txtManutencao8.Text = "C";
+                    txtManutencao8.Text = "Ç";
                     txtManutencao9.Text = "A";
                     txtManutencao10_Avisos5.Text = "O";
                     txtManutencao1.Background = Brushes.Green;
@@ -265,15 +265,15 @@ namespace Av30_PalavrasCruzadas
 
         private void LogicaExcecao()
         {
-            if (txtManutencao6_Excecao1.Text.ToUpper() == "E" && txtExcecao2.Text.ToUpper() == "X" && txtExcecao3.Text.ToUpper() == "C" && txtExcecao4.Text.ToUpper() == "E" && txtExcecao5.Text.ToUpper() == "C" && txtExcecao6.Text.ToUpper() == "A" && txtExcecao7.Text.ToUpper() == "O")
+            if (txtManutencao6_Excecao1.Text.ToUpper() == "E" && txtExcecao2.Text.ToUpper() == "X" && txtExcecao3.Text.ToUpper() == "C" && txtExcecao4.Text.ToUpper() == "E" && txtExcecao5.Text.ToUpper() == "Ç" && txtExcecao6.Text.ToUpper() == "A" && txtExcecao7.Text.ToUpper() == "O")
             {
-                if (palavra5 == "EXCECAO")
+                if (palavra5 == "EXCEÇAO")
                 {
                     txtManutencao6_Excecao1.Text = "E";
                     txtExcecao2.Text = "X";
                     txtExcecao3.Text = "C";
                     txtExcecao4.Text = "E";
-                    txtExcecao5.Text = "C";
+                    txtExcecao5.Text = "Ç";
                     txtExcecao6.Text = "A";
                     txtExcecao7.Text = "O";
                     txtManutencao6_Excecao1.Background = Brushes.Green;
@@ -324,8 +324,8 @@ namespace Av30_PalavrasCruzadas
                     txtAutenticidade9.Background = Brushes.Green;
                     txtAutenticidade10.Background = Brushes.Green;
                     txtAutenticidade11.Background = Brushes.Green;
-                    txtAutenticidade12_Unidade6.Background= Brushes.Green;
-                    txtAutenticidade13.Background= Brushes.Green;
+                    txtAutenticidade12_Unidade6.Background = Brushes.Green;
+                    txtAutenticidade13.Background = Brushes.Green;
                     txtAutenticidade1.IsEnabled = false;
                     txtAutenticidade2.IsEnabled = false;
                     txtIncidente8_Autenticidade3.IsEnabled = false;
@@ -375,7 +375,7 @@ namespace Av30_PalavrasCruzadas
         }
 
         private void LogicaEstresse()
-        { 
+        {
             if (txtIncidente6_Estresse1.Text.ToUpper() == "E" && txtEstresse2.Text.ToUpper() == "S" && txtEstresse3.Text.ToUpper() == "T" && txtEstresse4.Text.ToUpper() == "R" && txtEstresse5.Text.ToUpper() == "E" && txtEstresse6.Text.ToUpper() == "S" && txtEstresse7.Text.ToUpper() == "S" && txtEstresse8.Text.ToUpper() == "E")
             {
                 if (palavra8 == "ESTRESSE")
@@ -432,6 +432,52 @@ namespace Av30_PalavrasCruzadas
             }
         }
 
+        private void LogicaPreventiva()
+        {
+            if (txtPreventiva1.Text.ToUpper() == "P" && txtPreventiva2.Text.ToUpper() == "R" && txtPreventiva3.Text.ToUpper() == "E" && txtPreventiva4.Text.ToUpper() == "V" && txtPreventiva5_Evento1.Text.ToUpper() == "E" && txtPreventiva6.Text.ToUpper() == "N" && txtPreventiva7.Text.ToUpper() == "T" && txtPreventiva8.Text.ToUpper() == "I" && txtPreventiva9.Text.ToUpper() == "V" && txtPreventiva10.Text.ToUpper() == "A")
+            {
+                if (palavra10 == "PREVENTIVA")
+                {
+                    txtPreventiva1.Text = "P";
+                    txtPreventiva2.Text = "R";
+                    txtPreventiva3.Text = "E";
+                    txtPreventiva4.Text = "V";
+                    txtPreventiva5_Evento1.Text = "E";
+                    txtPreventiva1.Text = "N";
+                    txtPreventiva7.Text = "T";
+                    txtPreventiva8.Text = "I";
+                    txtPreventiva9.Text = "V";
+                    txtPreventiva10.Text = "A";
+                    txtPreventiva1.Background = Brushes.Green;
+                    txtPreventiva2.Background = Brushes.Green;
+                    txtPreventiva3.Background = Brushes.Green;
+                    txtPreventiva4.Background = Brushes.Green;
+                    txtPreventiva5_Evento1.Background = Brushes.Green;
+                    txtPreventiva6.Background = Brushes.Green;
+                    txtPreventiva7.Background = Brushes.Green;
+                    txtPreventiva8.Background = Brushes.Green;
+                    txtPreventiva9.Background = Brushes.Green;
+                    txtPreventiva10.Background = Brushes.Green;
+                    txtPreventiva1.IsEnabled = false;
+                    txtPreventiva2.IsEnabled = false;
+                    txtPreventiva3.IsEnabled = false;
+                    txtPreventiva4.IsEnabled = false;
+                    txtPreventiva5_Evento1.IsEnabled = false;
+                    txtPreventiva6.IsEnabled = false;
+                    txtPreventiva7.IsEnabled = false;
+                    txtPreventiva8.IsEnabled = false;
+                    txtPreventiva9.IsEnabled = false;
+                    txtPreventiva10.IsEnabled = false;
+                }
+            }
+        }
+        private void Vitoria()
+        {
+            if (palavra1 == "EVENTOS" && palavra2 == "MANUTENÇAO" && palavra3 == "INCIDENTE" && palavra4 == "AVISOS" && palavra5 == "EXCEÇAO" && palavra6 == "AUTENTICIDADE" && palavra7 == "UNIDADE" && palavra8 == "ESTRESSE" && palavra9 == "CARGA" && palavra10 == "PREVENTIVA")
+            {
+                txtVitoria.Visibility = Visibility.Visible;
+            }
+        }
         private void verifica(object sender, KeyEventArgs e)
         {
             palavra1 = txtPreventiva5_Evento1.Text + txtEventos2.Text + txtEventos3.Text + txtEventos4_manutencao3.Text + txtEventos5.Text + txtEventos6.Text + txtEventos7.Text;
@@ -452,6 +498,8 @@ namespace Av30_PalavrasCruzadas
             palavra8 = palavra8.ToUpper();
             palavra9 = txtIncidente3_Carga1.Text + txtCarga2.Text + txtCarga3.Text + txtCarga4.Text + txtCarga5.Text;
             palavra9 = palavra9.ToUpper();
+            palavra10 = txtPreventiva1.Text + txtPreventiva2.Text + txtPreventiva3.Text + txtPreventiva4.Text + txtPreventiva5_Evento1.Text + txtPreventiva6.Text + txtPreventiva7.Text + txtPreventiva8.Text + txtPreventiva9.Text + txtPreventiva10.Text;
+            palavra10 = palavra10.ToUpper();
             logicaEventos();
             logicaManutencao();
             LogicaIncidente();
@@ -461,14 +509,8 @@ namespace Av30_PalavrasCruzadas
             LogicaUnidade();
             LogicaEstresse();
             LogicaCarga();
+            LogicaPreventiva();
+            Vitoria();
         }
-        
-        private void Vitoria()
-        {
-            if (palavra1 == "EVENTOS" && palavra2 == "MANUTENCAO" && palavra3 == "INCIDENTE" && palavra4 == "AVISOS" && palavra5 == "EXCECAO" && palavra6 == "AUTENTICIDADE" && palavra7 == "UNIDADE" && palavra8 == "ESTRESSE" && palavra9 == "CARGA" && palavra10 == "PREVENTIVA")
-            {
-                
-            }
-        }
-    }   
+    }
 }
